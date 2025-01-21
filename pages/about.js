@@ -1,7 +1,8 @@
 import Image from 'next/image';
+import Head from 'next/head';
+
 import image1 from '@/public/about-1.jpg';
 import image2 from '@/public/about-2.jpg';
-import Head from 'next/head';
 
 export default function About() {
   return (
@@ -49,7 +50,7 @@ export default function About() {
 
         <div className='relative aspect-square col-span-2'>
           <Image
-            src='/about-2.jpg'
+            src={image2}
             fill
             className='object-cover'
             alt='Family that manages The Wild Oasis'

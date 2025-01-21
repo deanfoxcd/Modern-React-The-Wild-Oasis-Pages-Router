@@ -1,6 +1,8 @@
-import CabinList from '@/components/CabinList';
-import { getCabins } from '@/lib/data-service';
 import Head from 'next/head';
+
+import CabinList from '@/components/CabinList';
+
+import { getCabins } from '@/lib/data-service';
 
 export async function getStaticProps() {
   const cabins = await getCabins();

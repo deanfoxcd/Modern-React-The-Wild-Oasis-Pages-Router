@@ -1,7 +1,8 @@
-import CabinView from '@/components/CabinView';
-import { getCabin } from '@/lib/data-service';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+
+import CabinView from '@/components/CabinView';
+
+import { getCabin } from '@/lib/data-service';
 
 export async function getServerSideProps({ params }) {
   const cabin = await getCabin(params.cabinId);
